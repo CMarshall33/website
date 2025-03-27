@@ -1,7 +1,8 @@
 import App from './client/App.js';
+import main from './client/main.js';
 
 const index = () => {
-    <App/>
+    <main/>
 };
 
 export default index

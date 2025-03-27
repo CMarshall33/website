@@ -5,41 +5,18 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from "./App.js";
-import Record from "./components/Record";
-import RecordList from "./components/RecordList";
-import "./index.css";
-
+import Invoice from "./InvoiceFormPage.js";
+import WelcomePage from "./WelcomePage.js";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <RecordList />,
-      },
-    ],
+    element: <WelcomePage />
   },
   {
-    path: "/edit/:id",
-    element: <App />,
-    children: [
-      {
-        path: "/edit/:id",
-        element: <Record />,
-      },
-    ],
-  },
-  {
-    path: "/create",
-    element: <App />,
-    children: [
-      {
-        path: "/create",
-        element: <Record />,
-      },
-    ],
-  },
+    path: "/invoice",
+    element: <Invoice/>
+  }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
