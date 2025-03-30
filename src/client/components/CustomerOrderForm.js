@@ -3,7 +3,7 @@ import react from "react";
 const CustomerOrderForm = () => {
 return(
     <div>
-        <h1>Hello</h1>
+        <h1>order pls</h1>
     </div>
 )
 }
