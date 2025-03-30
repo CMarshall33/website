@@ -2,7 +2,7 @@ import react from "react";
 import InvoiceForm from "./components/InvoiceForm.js";
 import { Link } from 'react-router-dom';
 
-
+//Creates the overarching InoivceFormPage which contains the InvoiceForm component.
 const InvoiceFormPage = () => {
     return (
         <div className="w-full p-6">

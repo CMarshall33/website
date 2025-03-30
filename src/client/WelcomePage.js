@@ -1,6 +1,8 @@
 import react from 'react';
 import { Link } from 'react-router-dom';
 
+//Returns the WelcomePage component for the website
+
 const WelcomePage = () => {
     return (
         <div className="w-full p-6">
