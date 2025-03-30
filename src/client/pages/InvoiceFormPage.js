@@ -1,5 +1,5 @@
 import react from "react";
-import InvoiceForm from "./components/InvoiceForm.js";
+import InvoiceForm from "../components/InvoiceForm.js";
 import { Link } from 'react-router-dom';
 
 
