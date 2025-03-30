@@ -4,9 +4,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from "./App.js";
-import Invoice from "./InvoiceFormPage.js";
-import WelcomePage from "./WelcomePage.js";
+import Invoice from "./pages/InvoiceFormPage.js";
+import WelcomePage from "./pages/WelcomePage.js";
+import CustomerOrderPage from "./pages/CustomerOrderPage.js";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/invoice",
     element: <Invoice/>
+  },
+  {
+    path: "/orderForm",
+    element: <CustomerOrderPage/>
   }
 
 ]);
