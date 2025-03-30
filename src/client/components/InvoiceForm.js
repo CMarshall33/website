@@ -49,7 +49,7 @@ const InvoiceForm = () => {
     return (
         <div className="w-full p-6">
             <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <div className="mb-4">
+                <div className="mb-1">
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                         Name
                     </label>
@@ -60,7 +60,7 @@ const InvoiceForm = () => {
                         placeholder="Name"
                     />
                 </div>
-                <div className="mb-6">
+                <div className="mb-2">
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="amount">
                         Amount
                     </label>
@@ -69,6 +69,39 @@ const InvoiceForm = () => {
                         id="amount"
                         type="text"
                         placeholder="Amount"
+                    />
+                </div>
+                <div classname="mb-3">
+                    <label classname="block text-gray-700 text-sm font-bold mb-2" htmlFor="PO number">
+                        PO number
+                    </label>
+                    <input
+                        classname="shadow appearance-none border-red rounded w-full py-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        id="PO number"
+                        type="number"
+                        placeholder="PO number"
+                    />
+                </div>
+                <div classname="mb-4">
+                    <label classname="block text-gray-700 text-sm font-bold mb-2" htmlFor="Items">
+                        Items
+                    </label>
+                    <input
+                        classname="shadow appearance-none border-red rounded w-full py-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        id="Items"
+                        type="string"
+                        placeholder="items"
+                    />
+                </div>
+                <div classname="mb-5">
+                    <label classname="block text-gray-700 text-sm font-bold mb-2" htmlFor="Address">
+                        Address
+                    </label>
+                    <input
+                        classname="shadow appearance-none border-red rounded w-full py-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        id="Address"
+                        type="string"
+                        placeholder="Address"
                     />
                 </div>
                 <div className="flex items-center justify-between">
