@@ -4,9 +4,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from "./App.js";
+
+//Imorting the components so main.js can handle the routing for our website.
 import Invoice from "./InvoiceFormPage.js";
 import WelcomePage from "./WelcomePage.js";
+
+//Handles the url routes for our website
+//localhost:3000/ will return the welcomePage component
+//localhost:3000/invoice will return the InvoiceFormPage component
 const router = createBrowserRouter([
   {
     path: "/",
